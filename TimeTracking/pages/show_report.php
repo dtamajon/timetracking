@@ -1,4 +1,3 @@
-<a name="bugnotestats" id="bugnotestats" />
 <?php 
 require_once( 'core.php' ); 
 require_once( 'bug_api.php' );
@@ -25,6 +24,7 @@ $t_plugin_TimeTracking_stats_to_y = gpc_get_int('end_year', $t_plugin_TimeTracki
 $f_plugin_TimeTracking_stats_button = gpc_get_string('plugin_TimeTracking_stats_button', '');
 $f_project_id = helper_get_current_project();
 ?> 
+<a name="bugnotestats" id="bugnotestats" />
 <form method="post" action="<?php echo plugin_page( 'show_report' )?>">
 <?php collapse_open( 'bugnotestats' ); ?>
 <table border="1" class="width100" cellspacing="0">
